@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
+import rwsdk from 'rwsdk/vite'
 
 export default defineConfig({
-  root: 'src',
+  plugins: [rwsdk()],
   build: {
-    outDir: '../dist',
     emptyOutDir: true,
   },
   server: {
@@ -11,6 +11,6 @@ export default defineConfig({
     https: true,
   },
   optimizeDeps: {
-    exclude: ['@livestore/adapter-web'],
+    exclude: ['@livestore/adapter-web', '@livestore/livestore'],
   },
 })

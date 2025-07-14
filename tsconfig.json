@@ -17,7 +17,8 @@
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "."
+    "rootDir": ".",
+    "types": ["vite/client", "@cloudflare/workers-types"]
   },
-  "include": ["src/**/*", "tests/**/*"]
+  "include": ["src/**/*", "tests/**/*", "worker-configuration.d.ts"]
 }

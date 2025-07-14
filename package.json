@@ -18,12 +18,17 @@
     "@effect/platform": "^0.86.0",
     "@effect/platform-browser": "^0.66.0",
     "@effect/schema": "^0.75.5",
-    "effect": "^3.11.0"
+    "effect": "^3.11.0",
+    "rwsdk": "^0.1.15",
+    "react": "19.2.0-canary-39cad7af-20250411",
+    "react-dom": "19.2.0-canary-39cad7af-20250411"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@playwright/test": "^1.48.2",
     "@types/node": "^22.10.7",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "typescript": "^5.7.3",
     "vite": "^6.0.7"
   }
