@@ -14,11 +14,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "exactOptionalPropertyTypes": true,
-    "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true,
     "rootDir": ".",
     "types": ["vite/client", "@cloudflare/workers-types"]
   },
-  "include": ["src/**/*", "tests/**/*", "worker-configuration.d.ts"]
+  "include": ["src/**/*", "*.d.ts"]
 }

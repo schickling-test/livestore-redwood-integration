@@ -1,11 +1,8 @@
 import { defineConfig } from 'vite'
-import rwsdk from 'rwsdk/vite'
+import { redwood } from 'rwsdk/vite'
 
 export default defineConfig({
-  plugins: [rwsdk()],
-  build: {
-    emptyOutDir: true,
-  },
+  plugins: [redwood()],
   server: {
     port: 3000,
     https: true,

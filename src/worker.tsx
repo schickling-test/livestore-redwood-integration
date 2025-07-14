@@ -1,16 +1,24 @@
 import { defineApp } from 'rwsdk/worker'
 import { render, route } from 'rwsdk/router'
-import TodoApp from './pages/TodoApp'
-import Document from './components/Document'
+import TodoPage from './pages/TodoPage'
+
+function Document({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LiveStore TodoMVC</title>
+      </head>
+      <body>
+        <div id="root">{children}</div>
+      </body>
+    </html>
+  )
+}
 
 export default defineApp([
   render(Document, [
-    route('/', () => <h1>LiveStore + RedwoodJS SDK Integration</h1>),
-    route('/todos', TodoApp),
-    route('/api/status', () => 
-      new Response(JSON.stringify({ status: 'ok', timestamp: Date.now() }), {
-        headers: { 'Content-Type': 'application/json' }
-      })
-    ),
+    route('/', TodoPage),
   ]),
 ])

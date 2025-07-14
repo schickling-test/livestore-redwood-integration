@@ -1,4 +1,4 @@
 import { makeWorker } from '@livestore/adapter-web/worker'
-import { schema } from './schema/index.js'
+import { schema } from './schema'
 
 makeWorker({ schema })
