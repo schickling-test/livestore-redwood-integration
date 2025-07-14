@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite'
 import { redwood } from 'rwsdk/vite'
+import { cloudflare } from '@cloudflare/vite-plugin'
 
 export default defineConfig({
-  plugins: [redwood()],
+  plugins: [
+    cloudflare({
+      viteEnvironment: { name: 'worker' },
+    }),
+    redwood(),
+  ],
   server: {
     port: 3000,
     https: true,
