@@ -14,6 +14,7 @@
     "@livestore/livestore": "0.3.2-dev.10",
     "@livestore/wa-sqlite": "1.0.5",
     "@livestore/adapter-web": "0.3.2-dev.10",
+    "@livestore/adapter-node": "0.3.2-dev.10",
     "@livestore/react": "0.3.2-dev.10",
     "react": "19.0.0",
     "react-dom": "19.0.0",
